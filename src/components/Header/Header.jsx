@@ -54,7 +54,7 @@ function Headaer() {
         <div className="user-cart">
 
           <Link to={"/benzbakery-web-app/Cart"} className=""><img src="./Images/Cart.png" className="cart" /><span className='cart-count'>{cart.length}</span></Link>
-          {/* <Link to={"/benzbakery-web-app/Login"} className=""><img src="./Images/login-2.png" className="login" /></Link> */}
+          <Link to={"/benzbakery-web-app/Login"} className=""><img src="./Images/login-2.png" className="login" /></Link>
 
         </div>
 
