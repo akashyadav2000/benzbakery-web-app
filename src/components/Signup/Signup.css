@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* width: 400px; */
+    width: 100%;
+    padding-top: 85px;
+    /* margin: auto; */
+    background: linear-gradient(to right,#fdcbf1, #d4f3ff);
+    flex-wrap: wrap;
+}
+
+.image-container {
+    width: 400px;
+    height: 755px;
+    /* flex: 1 1 20rem; */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+    .image-container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+
+.register-container {
+    /* position:relative; */
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 755px;
+    background: linear-gradient(to left, #fda7df, #d4f3ff);
+    padding: 5px 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.signup-title {
+    font-family: 'Poppins', sans-serif;
+    /* margin-top: 0px; */
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    cursor: default;
+}
+
+    .signup-title::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 160px;
+        border-radius: 5px;
+        background: linear-gradient(to right, #ff1db4, #ac1dff);
+    }
+
+.user-details {
+    margin: 0px 0 12px 0;
+}
+
+.details {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 3px;
+    cursor: default;
+    font-size: 17px;
+}
+
+.text-box {
+    font-family: 'Poppins', sans-serif;
+    height: 45px;
+    width: 340px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    background-color: white;
+    border: 1px solid grey;
+    border-bottom-width: 2px;
+    margin-bottom: 7px;
+    transition: all 0.3s ease;
+    color: #cf661a;
+    font-weight: 500;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=text]::-webkit-inner-spin-button,
+input[type=text]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+    .text-box:focus-visible {
+        transform: scale(1.1);
+        border-color: #9b59b6;
+    }
+
+    .password-eye {
+        
+        display:flex;
+        margin-top:-40px;
+        margin-left: 310px;
+        cursor: pointer;
+        font-size:21px;
+    }
+
+
+    .error-messages{
+      margin-top:-7px;
+      margin-bottom: 7px;
+        color: rgb(255, 0, 0);
+    }
+
+
+
+.sign-up-btn {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(to left, #F977CE, #C373F2);
+}
+
+    .sign-up-btn:hover {
+        transform: scale(1.1);
+        background: linear-gradient(to right, #ff1db4, #ac1dff);
+        color: #000000;
+    }
+
+
+.login-line {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding-left: 20px;
+    cursor: default;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.login-link {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-align: justify;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    font-size: 20px;
+}
+
+    .login-link:hover {
+        color: #0024ff;
+        text-shadow: 2px 2px 3px white;
+        transition: all 0.1s ease;
+    }
+
+
+.validate-txt {
+    margin-top: -23px;
+    margin-left: 9px;
+    font-weight: 500;
+    color: red;
+    position: absolute;
+    font-size: 16.1px;
+}
