@@ -28,7 +28,7 @@ function Login() {
 
               <button id="" className="login-btn">Login</button>
               <div>
-                <Link to={'/Signup'} className="sign-up-line">Don't have an account ?
+                <Link to={"/benzbakery-web-app/Signup"} className="sign-up-line">Don't have an account ?
                   <span className="sign-up-link">Sign up</span></Link>
               </div>
               <Link to="" className="forgot-pwd">Forgot Password? </Link>

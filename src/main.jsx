@@ -49,14 +49,14 @@ const router = createBrowserRouter(
           path: "/benzbakery-web-app/About",
           element: <About />
         },
-        // {
-        //   path: "/benzbakery-web-app/Login",
-        //   element: <Login />
-        // },
-        // {
-        //   path: "/benzbakery-web-app/Signup",
-        //   element: <Signup />
-        // },
+        {
+          path: "/benzbakery-web-app/Login",
+          element: <Login />
+        },
+        {
+          path: "/benzbakery-web-app/Signup",
+          element: <Signup />
+        },
         {
           path: "/benzbakery-web-app/Cart",
           element: <Cart />

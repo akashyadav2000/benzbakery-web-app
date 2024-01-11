@@ -45,7 +45,7 @@ function Signup() {
 
             <button id="signup_btn" className="sign-up-btn" OnClick="signup_btn_Click">Signup</button>
 
-            <Link to={'/login'} className="login-line">Have an account already? <span className="login-link">log in</span></Link>
+            <Link to={"/benzbakery-web-app/Login"} className="login-line">Have an account already? <span className="login-link">log in</span></Link>
 
           </div>
 

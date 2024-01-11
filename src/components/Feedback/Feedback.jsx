@@ -79,7 +79,7 @@ function Feedback() {
                   className="f_btn"
                   type="submit"
                   onClick={handleFeedback}
-                  to={"/"}
+                  to={"/benzbakery-web-app/"}
                 >
                   Submit Now
                 </Link>
