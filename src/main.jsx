@@ -5,8 +5,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './Layout.jsx'
 import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
-import Login from './components/Login/Login.jsx'
-import Signup from './components/Signup/Signup.jsx'
+// import Login from './components/Login/Login.jsx'
+// import Signup from './components/Signup/Signup.jsx'
 import PastryContainer from './components/Pastry/PastryContainer.jsx'
 // import CakebuyContainer from './components/Cakebuy/CakebuyContainer.jsx'
 import Cart from './components/Cart/Cart.jsx'
@@ -49,14 +49,14 @@ const router = createBrowserRouter(
           path: "/benzbakery-web-app/About",
           element: <About />
         },
-        {
-          path: "/benzbakery-web-app/Login",
-          element: <Login />
-        },
-        {
-          path: "/benzbakery-web-app/Signup",
-          element: <Signup />
-        },
+        // {
+        //   path: "/benzbakery-web-app/Login",
+        //   element: <Login />
+        // },
+        // {
+        //   path: "/benzbakery-web-app/Signup",
+        //   element: <Signup />
+        // },
         {
           path: "/benzbakery-web-app/Cart",
           element: <Cart />
