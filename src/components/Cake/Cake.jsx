@@ -21,7 +21,7 @@ function Cake({ cakeItem }) {
       <div className="cake-col" id={cakeItem.id}>
         <img src={cakeItem.image} alt={cakeItem.alt_Name} />
         <div className="price">
-          <Link to={"Cart"}
+          <Link to={"/benzbakery-web-app/Cart"}
             onClick={handldeAddToCart}
             className="rupees">{cakeItem.item}<br />
             ₹ {cakeItem.price}</Link>

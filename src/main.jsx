@@ -22,48 +22,48 @@ import Feedback from './components/Feedback/Feedback.jsx'
 const router = createBrowserRouter(
   [
     {
-      path: "/",
+      path: "/benzbakery-web-app/",
       element: <Layout />,
       children: [
         {
-          path: "/",
+          path: "/benzbakery-web-app/",
           element: <Home />
         },
         {
-          path: "Cake",
+          path: "/benzbakery-web-app/Cake",
           element: <CakeContainer />
         },
         {
-          path: "Pastry",
+          path: "/benzbakery-web-app/Pastry",
           element: <PastryContainer />
         },
         {
-          path: "CupCake",
+          path: "/benzbakery-web-app/CupCake",
           element: <CupCakeContainer />
         },
         {
-          path: "WeddingCake",
+          path: "/benzbakery-web-app/WeddingCake",
           element: <WeddingCakeContainer />
         },
         {
-          path: "About",
+          path: "/benzbakery-web-app/About",
           element: <About />
         },
         {
-          path: "Login",
+          path: "/benzbakery-web-app/Login",
           element: <Login />
         },
         {
-          path: "Signup",
+          path: "/benzbakery-web-app/Signup",
           element: <Signup />
         },
         {
-          path: "Cart",
+          path: "/benzbakery-web-app/Cart",
           element: <Cart />
         },
 
         {
-          path: "Feedback",
+          path: "/benzbakery-web-app/Feedback",
           element: <Feedback />
         },
       ],

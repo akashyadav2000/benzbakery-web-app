@@ -8,18 +8,18 @@ function Headaer() {
   return (
     <>
       <header>
-        <Link to={"/"} className="logo"><img src="./Images/Benz_Logo.png" /></Link>
+        <Link to={"/benzbakery-web-app/"} className="logo"><img src="./Images/Benz_Logo.png" /></Link>
 
 
         <nav className="navigate">
           <ul>
 
             <li>
-              <NavLink to={"/"}
+              <NavLink to={"/benzbakery-web-app/"}
 
               >Home</NavLink>
             </li>
-            <li><Link to={"/"} >Product</Link>
+            <li><Link to={"/benzbakery-web-app/"} >Product</Link>
               <ul>
                 <li><Link to={'Cake'}>Cakes</Link></li>
                 <li><Link to={'Pastry'}>Pastrys</Link></li>
@@ -29,11 +29,11 @@ function Headaer() {
             </li>
 
             <li>
-              <NavLink to={"About"}
+              <NavLink to={"/benzbakery-web-app/About"}
 
               >About</NavLink>
             </li>
-            <li><Link to={"Feedback"}>Feedback</Link></li>
+            <li><Link to={"/benzbakery-web-app/Feedback"}>Feedback</Link></li>
 
           </ul>
         </nav>
@@ -53,8 +53,8 @@ function Headaer() {
 
         <div className="user-cart">
 
-          <Link to={"Cart"} className=""><img src="./Images/Cart.png" className="cart" /><span className='cart-count'>{cart.length}</span></Link>
-          <Link to={"Login"} className=""><img src="./Images/login-2.png" className="login" /></Link>
+          <Link to={"/benzbakery-web-app/Cart"} className=""><img src="./Images/Cart.png" className="cart" /><span className='cart-count'>{cart.length}</span></Link>
+          <Link to={"/benzbakery-web-app/Login"} className=""><img src="./Images/login-2.png" className="login" /></Link>
 
         </div>
 

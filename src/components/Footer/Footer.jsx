@@ -39,10 +39,10 @@ function Footer() {
             </h3>
 
             <ul>
-              <li><Link to={"/"}>Home</Link></li>
-              <li><Link to={"/"}>Products</Link></li>
-              <li><Link to={"About"}>About</Link></li>
-              <li><Link to={"Feedback"}>Feedback</Link></li>
+              <li><Link to={"/benzbakery-web-app/"}>Home</Link></li>
+              <li><Link to={"/benzbakery-web-app/"}>Products</Link></li>
+              <li><Link to={"/benzbakery-web-app/About"}>About</Link></li>
+              <li><Link to={"/benzbakery-web-app/Feedback"}>Feedback</Link></li>
             </ul>
 
           </div>

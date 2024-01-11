@@ -16,7 +16,7 @@ function CupCake({ cupCakeItem }) {
       <div className="cake-col" id={cupCakeItem.id}>
         <img src={cupCakeItem.image} alt={cupCakeItem.alt_Name} />
         <div className="price">
-          <Link to={"Cart"}
+          <Link to={"/benzbakery-web-app/Cart"}
             onClick={handldeAddToCart}
             className="rupees">{cupCakeItem.item}<br />
             ₹ {cupCakeItem.price}</Link>
