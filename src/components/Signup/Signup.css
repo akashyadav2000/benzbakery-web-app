@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 .container {
     display: flex;
     justify-content: center;
@@ -22,13 +21,12 @@
 
 .image-container {
     width: 400px;
-    height: 720px;
+    height: 755px;
     /* flex: 1 1 20rem; */
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     transition: all 0.5s ease-in-out;
 }
-
 
     .image-container img {
         height: 100%;
@@ -40,8 +38,12 @@
 
 
 .register-container {
+    /* position:relative; */
+    display:grid;
+    justify-content: center;
+    align-items: center;
     width: 400px;
-    height: 720px;
+    height: 755px;
     background: linear-gradient(to left, #fda7df, #d4f3ff);
     padding: 5px 30px;
     border-top-right-radius: 5px;
@@ -52,7 +54,7 @@
 
 .signup-title {
     font-family: 'Poppins', sans-serif;
-    margin-top: 0px;
+    /* margin-top: 0px; */
     font-size: 25px;
     font-weight: 500;
     position: relative;
@@ -71,7 +73,7 @@
     }
 
 .user-details {
-    margin: 20px 0 12px 0;
+    margin: 0px 0 12px 0;
 }
 
 .details {
@@ -93,7 +95,7 @@
     background-color: white;
     border: 1px solid grey;
     border-bottom-width: 2px;
-    margin-bottom: 21px;
+    margin-bottom: 7px;
     transition: all 0.3s ease;
     color: #cf661a;
     font-weight: 500;
@@ -113,18 +115,27 @@ input[type=text]::-webkit-outer-spin-button {
 }
 
 
-
     .text-box:focus-visible {
         transform: scale(1.1);
         border-color: #9b59b6;
     }
 
-.fa {
-    position: absolute;
-    margin-top: -46px;
-    margin-left: 290px;
-    cursor: pointer;
-}
+    .password-eye {
+        
+        display:flex;
+        margin-top:-40px;
+        margin-left: 310px;
+        cursor: pointer;
+        font-size:21px;
+    }
+
+
+    .error-messages{
+      margin-top:-7px;
+      margin-bottom: 7px;
+        color: rgb(255, 0, 0);
+    }
+
 
 
 .sign-up-btn {
@@ -149,7 +160,6 @@ input[type=text]::-webkit-outer-spin-button {
         background: linear-gradient(to right, #ff1db4, #ac1dff);
         color: #000000;
     }
-
 
 
 .login-line {
