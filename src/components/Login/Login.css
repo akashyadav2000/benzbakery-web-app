@@ -235,10 +235,11 @@
 
         .login-container{
             height: 450px;
+            padding-top: 20px;
         }
 
         .account-container{
-            padding-top: 40px;
+            padding-top: 5px;
         }
 
         .login-title{
