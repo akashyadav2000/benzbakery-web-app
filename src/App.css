@@ -311,6 +311,12 @@ header .user-cart {
 
 }
 
+@media only screen and (max-width: 415px) {
+  .mobile-menu {
+    padding-top: 80px;
+  }
+}
+
 
 /*----------------section-------------*/
 
@@ -491,18 +497,13 @@ header .user-cart {
 @media only screen and (max-width: 811px) {
 
 .cake-col{
-  height:11rem;
+  height:12rem;
   width:140px;
-  margin:2rem 1rem 0.2rem;
+  margin:3.5rem 1rem 1rem;
 }
 
 .cake-col img{
   height: 9rem;
-}
-
-.price {
-  padding-bottom: 0;
-  padding-top: 0;
 }
 
 .rupees{
@@ -510,13 +511,41 @@ header .user-cart {
 }
 
 .cake-coll{
-  height:16rem;
+  height:20rem;
   width:140px;
-  margin:2.5rem 1rem 0.1rem;
+  margin:2.5rem 1rem 1rem;
 }
 
 .cake-coll img{
-  height: 14rem;
+  height: 17rem;
 }
 
 }
+
+
+@media only screen and (max-width: 415px) {
+
+  .cake-col{
+    height:11rem;
+    margin:2rem 1rem 0.2rem;
+  }
+  
+  .cake-col img{
+    height: 9rem;
+  }
+  
+  .price {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  
+  .cake-coll{
+    height:16rem;
+    margin:2.5rem 1rem 0.1rem;
+  }
+  
+  .cake-coll img{
+    height: 14rem;
+  }
+  
+  }
