@@ -180,6 +180,7 @@ hr {
 }
 
 .copyright {
+  color: red;
   text-align: center;
 }
 
@@ -222,7 +223,7 @@ hr {
 
   .newsletter input {
       font-size: small;
-      width: auto;
+      width: 220px;
   }
 
 

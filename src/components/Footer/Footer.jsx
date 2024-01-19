@@ -78,7 +78,7 @@ function Footer() {
           </div>
         </div>
         <hr />
-        <p className="copyright">Benz Bakery @ All Right Reserved</p>
+        <p className="copyright">Developer @ Akash Yadav</p>
 
 
       </footer>
