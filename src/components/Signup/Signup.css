@@ -223,8 +223,12 @@ input[type=text]::-webkit-outer-spin-button {
 
   @media only screen and (max-width: 415px) {
 
+    .container{
+        padding-top: 70px;
+    }
+
 .register-container{
-    height: 630px;
+    height: 620px;
 }
 
 .signup-title{
