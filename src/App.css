@@ -491,13 +491,18 @@ header .user-cart {
 @media only screen and (max-width: 811px) {
 
 .cake-col{
-  height:12rem;
+  height:11rem;
   width:140px;
-  margin:3.5rem 1rem 1rem;
+  margin:2rem 1rem 0.2rem;
 }
 
 .cake-col img{
   height: 9rem;
+}
+
+.price {
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .rupees{
@@ -505,13 +510,13 @@ header .user-cart {
 }
 
 .cake-coll{
-  height:20rem;
+  height:16rem;
   width:140px;
-  margin:2.5rem 1rem 1rem;
+  margin:2.5rem 1rem 0.1rem;
 }
 
 .cake-coll img{
-  height: 17rem;
+  height: 14rem;
 }
 
 }
