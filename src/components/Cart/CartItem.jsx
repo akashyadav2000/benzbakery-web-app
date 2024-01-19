@@ -21,7 +21,7 @@ function CartItem({ item }) {
           <img className="bag-item-img" src={item.image} />
         </div>
         <div className="item-right-part">
-          <div className="cakename-ingredient">{item.item}</div>
+          <div className="cakename-name">{item.item}</div>
           <span className="cakename-ingredient-details">
             {item.cakeD}
           </span>

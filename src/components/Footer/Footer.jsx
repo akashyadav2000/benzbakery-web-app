@@ -40,7 +40,7 @@ function Footer() {
 
             <ul>
               <li><Link to={"/benzbakery-web-app/"}>Home</Link></li>
-              <li><Link to={"/benzbakery-web-app/"}>Products</Link></li>
+              <li><Link to={"/benzbakery-web-app/Product"}>Products</Link></li>
               <li><Link to={"/benzbakery-web-app/About"}>About</Link></li>
               <li><Link to={"/benzbakery-web-app/Feedback"}>Feedback</Link></li>
             </ul>

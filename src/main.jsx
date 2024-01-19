@@ -15,6 +15,7 @@ import CakeContainer from './components/Cake/CakeContainer.jsx'
 import CupCakeContainer from './components/CupCake/CupCakeContainer.jsx'
 import WeddingCakeContainer from './components/WeddingCake/WeddingCakeContainer.jsx'
 import Feedback from './components/Feedback/Feedback.jsx'
+import Product from './components/Product/Product.jsx'
 // import Cakebuy from './components/Cakebuy/Cakebuy.jsx'
 
 
@@ -28,6 +29,12 @@ const router = createBrowserRouter(
           path: "/benzbakery-web-app/",
           element: <Home />
         },
+
+        {
+          path: "/benzbakery-web-app/Product",
+          element: <Product />
+        },
+
         {
           path: "/benzbakery-web-app/Cake",
           element: <CakeContainer />

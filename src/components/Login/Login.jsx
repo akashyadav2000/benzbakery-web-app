@@ -63,17 +63,17 @@ function Login() {
 
               <span className="login_details">Email id</span>
               <input type="email" id="txtemail" placeholder="Enter your email" required=""
-                style={{ textTransform: "none" }} className="text-box" />
-              <p className="error-messages">{errorMessages.email}</p>
+                style={{ textTransform: "none" }} className="login-text-box" />
+              <p className="error-login-messages">{errorMessages.email}</p>
 
 
               <span className="login_details">Password</span>
 
               <input type={eye ? 'password' : 'text'} id="txtpass" placeholder="Password" required=""
-                style={{ textTransform: "none" }} className="text-box" />
+                style={{ textTransform: "none" }} className="login-text-box" />
 
-              {eye ? <FontAwesomeIcon className='password-eye' icon={faEye} onClick={handlePasswordEye} /> : <FontAwesomeIcon className='password-eye' icon={faEyeSlash} onClick={handlePasswordEye} />}
-              <p className="error-messages">{errorMessages.password}</p>
+              {eye ? <FontAwesomeIcon className='login-password-eye' icon={faEye} onClick={handlePasswordEye} /> : <FontAwesomeIcon className='login-password-eye' icon={faEyeSlash} onClick={handlePasswordEye} />}
+              <p className="error-login-messages">{errorMessages.password}</p>
 
 
               {/* {password ? (<Eye className="password-eye" onClick={handlePasswordEye} />) : (<EyeOff className="password-eye" onClick={handlePasswordEye} />)} */}

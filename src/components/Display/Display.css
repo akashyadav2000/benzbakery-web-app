@@ -80,7 +80,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1700px) {
   .home {
     min-height: 100vh;
   }

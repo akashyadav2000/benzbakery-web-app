@@ -3,7 +3,11 @@ import { Link, NavLink, useAsyncValue } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
 function Headaer() {
-  const cart = useSelector(store => store.cart)
+  const cart = useSelector(store => store.cart);
+
+  function toggleMobileMenu(menu) {
+    menu.classList.toggle("open");
+  }
 
   return (
     <>
@@ -19,7 +23,7 @@ function Headaer() {
 
               >Home</NavLink>
             </li>
-            <li><Link to={"/benzbakery-web-app/"} >Product</Link>
+            <li><Link to={"/benzbakery-web-app/Product"} >Product</Link>
               <ul>
                 <li><Link to={'Cake'}>Cakes</Link></li>
                 <li><Link to={'Pastry'}>Pastrys</Link></li>
@@ -58,7 +62,23 @@ function Headaer() {
 
         </div>
 
-        <div id="menu"><i className="fas fa-bars"></i></div>
+        <div id="hamburger-icon" onClick={(e) => toggleMobileMenu(e.currentTarget)}>
+
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+
+          <ul className="mobile-menu">
+
+            <li><Link to={"/benzbakery-web-app/"}>Home</Link></li>
+            <li><Link to={"/benzbakery-web-app/Product"} >Product</Link></li>
+            <li><Link to={"/benzbakery-web-app/About"}>About</Link></li>
+            <li><Link to={"/benzbakery-web-app/Feedback"}>Feedback</Link></li>
+            <li><Link to={"/benzbakery-web-app/Cart"}>Cart</Link></li>
+            <li><Link to={"/benzbakery-web-app/Login"} >Login</Link></li>
+
+          </ul>
+        </div>
       </header>
     </>
   )

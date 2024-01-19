@@ -5,6 +5,7 @@ import WeddingCakeContainer from '../WeddingCake/WeddingCakeContainer'
 import CakeContainer from '../Cake/CakeContainer'
 import CupCakeContainer from '../CupCake/CupCakeContainer'
 import { useSelector } from 'react-redux'
+import Product from '../Product/Product'
 // import HomeItem from '../HomeItem-1/HomeItem'
 
 function Home() {
@@ -14,13 +15,17 @@ function Home() {
   return (
     <>
       <Display />
+      <Product />
+
+
       {/* 
       {items.map(cakeElement => <HomeItem key={cakeElement.id} item={cakeElement} />)} */}
 
-      <CakeContainer />
+
+      {/* <CakeContainer />
       <PastryContainer />
       <CupCakeContainer />
-      <WeddingCakeContainer />
+      <WeddingCakeContainer /> */}
     </>
   )
 }

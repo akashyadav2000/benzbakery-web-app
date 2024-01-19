@@ -65,7 +65,7 @@ function Signup() {
       <form onClick={handleSubmit}>
         <div className="container">
 
-          <div className="image-container">
+          <div className="signup-image-container">
             <img src="./Images/Login_Background.jpg" alt="Signup_Background" />
           </div>
 
@@ -76,20 +76,20 @@ function Signup() {
             <div className="user-details">
               <div className="signup-title">Registration</div><br />
               <span className="details">User Name</span>
-              <input type="text" id="txtuname" placeholder="Enter your name" required="" style={{ textTransform: "none" }} className="text-box" />
+              <input type="text" id="txtuname" placeholder="Enter your name" required="" style={{ textTransform: "none" }} className="signup-text-box" />
               <p className="error-messages" >{errorMessages.username}</p>
 
 
               <span className="details">Email</span>
-              <input type="email" id="txtemail" placeholder="Enter your email" required="" style={{ textTransform: "none" }} className="text-box" />
+              <input type="email" id="txtemail" placeholder="Enter your email" required="" style={{ textTransform: "none" }} className="signup-text-box" />
               <p className="error-messages" >{errorMessages.email}</p>
 
               <span className="details">Mobile Number</span>
-              <input type="number" id="txtmobile" placeholder="Enter your number" required="" className="text-box" />
+              <input type="number" id="txtmobile" placeholder="Enter your number" required="" className="signup-text-box" />
               <p className="error-messages" >{errorMessages.mobileNumber}</p>
 
               <span className="details">Address</span>
-              <input type="text" id="txtaddress" placeholder="Enter your address" required="" className="text-box" />
+              <input type="text" id="txtaddress" placeholder="Enter your address" required="" className="signup-text-box" />
               <p className="error-messages" >{errorMessages.address}</p>
 
 
@@ -97,20 +97,20 @@ function Signup() {
 
 
               <input type={eye ? 'password' : 'text'} id="txtpass" placeholder="Password" required=""
-                style={{ textTransform: "none" }} className="text-box" />
+                style={{ textTransform: "none" }} className="signup-text-box" />
 
 
-              {eye ? <FontAwesomeIcon className='password-eye' icon={faEye} onClick={handlePasswordEye} /> : <FontAwesomeIcon className='password-eye' icon={faEyeSlash} onClick={handlePasswordEye} />}
+              {eye ? <FontAwesomeIcon className='signup-password-eye' icon={faEye} onClick={handlePasswordEye} /> : <FontAwesomeIcon className='signup-password-eye' icon={faEyeSlash} onClick={handlePasswordEye} />}
               <p className="error-messages" >{errorMessages.password}</p>
 
               <span className="details">Confirm Password</span>
 
 
               <input type={ceye ? 'password' : 'text'} id="txtcpass" placeholder="Confirm Password" required=""
-                style={{ textTransform: "none" }} className="text-box" />
+                style={{ textTransform: "none" }} className="signup-text-box" />
 
 
-              {ceye ? <FontAwesomeIcon className='password-eye' icon={faEye} onClick={handlePasswordCeye} /> : <FontAwesomeIcon className='password-eye' icon={faEyeSlash} onClick={handlePasswordCeye} />}
+              {ceye ? <FontAwesomeIcon className='signup-password-eye' icon={faEye} onClick={handlePasswordCeye} /> : <FontAwesomeIcon className='signup-password-eye' icon={faEyeSlash} onClick={handlePasswordCeye} />}
               <p className="error-messages" >{errorMessages.confirmPassword}</p>
 
               <button id="signup_btn" className="sign-up-btn" onClick={handleSignup}>Signup</button>
