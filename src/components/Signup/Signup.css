@@ -220,3 +220,48 @@ input[type=text]::-webkit-outer-spin-button {
       }
 
   }
+
+  @media only screen and (max-width: 415px) {
+
+.register-container{
+    height: 630px;
+}
+
+.signup-title{
+    font-size: 20px;
+}
+
+.details{
+    font-size: 14px;
+}
+
+.signup-text-box{
+    height: 35px;
+    font-size: 14px;
+}
+
+.error-messages{
+    font-size: 13px;
+}
+
+.sign-up-btn{
+    height: 42px;
+}
+
+.login-line{
+    font-size: 16px;
+}
+
+.login-link{
+    font-size: 17px;
+}
+
+.signup-password-eye{
+    margin-top: -35px;
+    font-size: 19px;
+}
+
+.sign-up-btn:hover {
+    transform: scale(1);
+}
+  }
