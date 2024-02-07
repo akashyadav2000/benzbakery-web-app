@@ -4,7 +4,7 @@ import './Cart.css'
 const CartSummary = () => {
   const bagItemIds = useSelector((state) => state.cart);
 
-  const categories = ["items", "cakeItems", "pastryItems", "cupCakeItems", "weddingCakeItems"];
+  const categories = ["cakeItems", "pastryItems", "cupCakeItems", "weddingCakeItems"];
 
   const finalItems = categories.flatMap(category => {
     const items = useSelector((state) => state[category]);

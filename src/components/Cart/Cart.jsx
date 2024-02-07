@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 function Cart() {
 
   const bagItems = useSelector((state) => state.cart);
-  const categories = ["items", "cakeItems", "pastryItems", "cupCakeItems", "weddingCakeItems"];
+  const categories = ["cakeItems", "pastryItems", "cupCakeItems", "weddingCakeItems"];
 
   const finalItems = categories.flatMap(category => {
     const items = useSelector((state) => state[category]);
