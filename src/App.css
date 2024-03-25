@@ -11,7 +11,6 @@
   text-transform: capitalize;
 }
 
-
 html {
   font-size: 15px;
   scroll-behavior: smooth;
@@ -32,7 +31,6 @@ section {
 a:link {
   text-decoration: none;
 }
-
 
 header {
   z-index: 1;
@@ -101,6 +99,7 @@ header .logo img {
   /*   text-shadow: 1px 1px black;*/
   display: block;
 }
+
 .navigate ul li ul li {
   background-color: whitesmoke;
   display: none;
@@ -148,6 +147,7 @@ header .user-cart {
   margin-right: 90px;
   cursor: pointer;
 }
+
 .cart {
   /* margin-bottom: 2px; */
   margin-right: 20px;
@@ -155,23 +155,23 @@ header .user-cart {
   transition: all 0.2s ease-in-out;
 }
 
-.cart-count{
-    background-color: #f16565;
-    white-space: nowrap;
-    text-align: center;
-    /* line-height: 19px; */
-    padding-inline: 6.5px;
-    padding-block: 1.6px;
-    /* height: 18px; */
-    position: relative;
-    border-radius: 50%;
-    font-size: 10px;
-    color: #fff;
-    right: 44px;
-    top: -38px;
-    font-size:17px;
-    font-weight: 700;
-    cursor: pointer;
+.cart-count {
+  background-color: #f16565;
+  white-space: nowrap;
+  text-align: center;
+  /* line-height: 19px; */
+  padding-inline: 6.5px;
+  padding-block: 1.6px;
+  /* height: 18px; */
+  position: relative;
+  border-radius: 50%;
+  font-size: 10px;
+  color: #fff;
+  right: 44px;
+  top: -38px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .login {
@@ -182,15 +182,16 @@ header .user-cart {
 
 .user-cart .cart:hover {
   background: white;
-  border: 1px solid #1DA1F2 ;
-  box-shadow: 1px 1px 10px #1DA1F2;
+  border: 1px solid #1da1f2;
+  box-shadow: 1px 1px 10px #1da1f2;
 }
 
 .user-cart .login:hover {
   background: white;
-  border: 1px solid #ff9ee8 ;
+  border: 1px solid #ff9ee8;
   box-shadow: 1px 1px 10px #ff9ee8;
 }
+
 /*.user-cart a:nth-child(1):hover {
     background: white;
     color: #ff1a1a;
@@ -204,7 +205,6 @@ header .user-cart {
     box-shadow: 0 0 15px #1DA1F2;
     border-radius: 3px;
 }*/
-
 
 #hamburger-icon {
   margin: auto 0;
@@ -241,11 +241,11 @@ header .user-cart {
   align-items: center;
   margin-left: 0;
   /* justify-content: flex-start; */
-  
 }
 
 .mobile-menu {
-  background: linear-gradient(to right, #fdcbf1, #d4f3ff);background: linear-gradient(to right, #fdcbf1, #d4f3ff);
+  background: linear-gradient(to right, #fdcbf1, #d4f3ff);
+  background: linear-gradient(to right, #fdcbf1, #d4f3ff);
   padding-top: 165px;
   display: none;
   position: absolute;
@@ -253,10 +253,8 @@ header .user-cart {
   left: 0;
   height: calc(100vh - 10px);
   width: 100%;
-  opacity: 0,5;
+  opacity: 0, 5;
 }
-
-
 
 .mobile-menu li {
   background-color: whitesmoke;
@@ -273,21 +271,17 @@ header .user-cart {
   text-align: center;
 }
 
-
-.mobile-menu li a{
- color:#cf661a ;
- font-size:27px;
- font-weight: 500;
+.mobile-menu li a {
+  color: #cf661a;
+  font-size: 27px;
+  font-weight: 500;
 }
-
 
 .mobile-menu li a:hover {
   color: black;
   transition: all 0.25s ease-in-out;
   transform: scale(1.14);
 }
-
-
 
 @media only screen and (max-width: 1400px) {
   header nav {
@@ -297,19 +291,21 @@ header .user-cart {
   #hamburger-icon {
     display: block;
   }
-
 }
 
 @media only screen and (max-width: 600px) {
-
-  .user-cart{
+  .user-cart {
     display: none;
   }
 
-  header .logo img {
-    width:85% ;
+  header {
+    height: 60px;
   }
 
+  header .logo img {
+    height: 55px;
+    width: 85%;
+  }
 }
 
 @media only screen and (max-width: 415px) {
@@ -317,7 +313,6 @@ header .user-cart {
     padding-top: 80px;
   }
 }
-
 
 /*----------------section-------------*/
 
@@ -496,57 +491,52 @@ header .user-cart {
 }
 
 @media only screen and (max-width: 811px) {
-
-.cake-col{
-  height:12rem;
-  width:140px;
-  margin:3.5rem 1rem 1rem;
-}
-
-.cake-col img{
-  height: 9rem;
-}
-
-.rupees{
-  font-size: 0.8rem;
-}
-
-.cake-coll{
-  height:20rem;
-  width:140px;
-  margin:2.5rem 1rem 1rem;
-}
-
-.cake-coll img{
-  height: 17rem;
-}
-
-}
-
-
-@media only screen and (max-width: 415px) {
-
-  .cake-col{
-    height:11rem;
-    margin:2rem 1rem 0.2rem;
+  .cake-col {
+    height: 12rem;
+    width: 140px;
+    margin: 3.5rem 1rem 1rem;
   }
-  
-  .cake-col img{
+
+  .cake-col img {
     height: 9rem;
   }
-  
+
+  .rupees {
+    font-size: 0.8rem;
+  }
+
+  .cake-coll {
+    height: 20rem;
+    width: 140px;
+    margin: 2.5rem 1rem 1rem;
+  }
+
+  .cake-coll img {
+    height: 17rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .cake-col {
+    height: 11rem;
+    margin: 2rem 1rem 0.2rem;
+  }
+
+  .cake-col img {
+    height: 9rem;
+  }
+
   .price {
     padding-bottom: 0;
     padding-top: 0;
   }
-  
-  .cake-coll{
-    height:16.4rem;
-    margin:2.5rem 1rem 0.1rem;
+
+  .cake-coll {
+    height: 16.4rem;
+    margin: 2.5rem 1rem 0.1rem;
   }
-  
-  .cake-coll img{
+
+  .cake-coll img {
     height: 14rem;
   }
-  
-  }
+}

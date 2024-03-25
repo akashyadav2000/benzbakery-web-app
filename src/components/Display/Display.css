@@ -99,7 +99,7 @@
 
 @media (max-width: 600px) {
   .home {
-    min-height: 92.5vh;
+    min-height: 93vh;
     background-image: url("../Images/background-mobile.jpg");
   }
 
