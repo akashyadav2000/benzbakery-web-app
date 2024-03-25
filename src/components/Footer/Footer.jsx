@@ -13,12 +13,11 @@ function Footer() {
 
         <div className="foot-row">
 
-          <div className="foot-col">
+          <div className="foot-col foot-col-image">
 
-            <img src="./Images/Benz_footer_Logo.png" className="f-logo" alt="Cakef-logo" />
+            <img src="./Images/pink.png" className="f-logo" alt="Cakef-logo" />
             <p>
-
-              We have aim to provide fresh and high quality baked goods for the Mumbai area. So please enjoy – this is our tradition.
+              We have aim to provide fresh and high quality baked goods , So please enjoy this is our tradition.
             </p>
           </div>
 
@@ -26,11 +25,10 @@ function Footer() {
             <h3>Shop
               <div className="underline"><span></span></div>
             </h3>
-            <p>T.P Road</p>
-            <p>Tembipada,Bhandup (West)</p>
-            <p>Maharashtra, PIN 400078, India</p>
+            <p>TembipadaRoad ,Bhandup (West)
+              Mumbai, 400078, India</p>
             <p className="email-id">Akashvinodyadav11@gmail.com</p>
-            <h3> Mon - Sun &nbsp; &nbsp;   10Am &nbsp;10Pm</h3>
+            <h4> Mon - Sun &nbsp; &nbsp;   10Am &nbsp;10Pm</h4>
           </div>
 
           <div className="foot-col">
@@ -64,13 +62,13 @@ function Footer() {
             <div className="social-icons">
 
               <div className="iconic">
-                <Link to="https://www.facebook.com/" className="">
+                <Link to="https://www.facebook.com/" className="link1">
                   <FontAwesomeIcon icon={faFacebookF} /></Link>
-                <Link to="https://www.instagram.com/" className="">
+                <Link to="https://www.instagram.com/" className="link2">
                   <FontAwesomeIcon icon={faInstagram} /></Link>
-                <Link to="https://www.twitter.com/" className="">
+                <Link to="https://www.twitter.com/" className="link3">
                   <FontAwesomeIcon icon={faTwitter} /></Link>
-                <Link to="https://www.youtube.com/" className="">
+                <Link to="https://www.youtube.com/" className="link4">
                   <FontAwesomeIcon icon={faYoutube} /></Link>
               </div>
 
