@@ -239,6 +239,7 @@ header .user-cart {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 0;
   /* justify-content: flex-start; */
   
 }
