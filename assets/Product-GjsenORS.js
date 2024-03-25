@@ -1,1 +1,0 @@
-import{j as r}from"./index-9Rpcks6K.js";import o from"./PastryContainer-u0Iz2c39.js";import t from"./WeddingCakeContainer-jFKsLxbM.js";import e from"./CakeContainer-qyou7KcH.js";import n from"./CupCakeContainer-Yw4bd4Cn.js";function x(){return r.jsxs(r.Fragment,{children:[r.jsx(e,{}),r.jsx(o,{}),r.jsx(n,{}),r.jsx(t,{})]})}export{x as default};
