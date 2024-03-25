@@ -13,12 +13,12 @@
   align-items: flex-start;
   gap: 20px;
   }
-  h1{
+  .feedback-ttile{
     font-weight: 600;
     color:#4facfe;
     font-size: 38px;
   }
-  .contact-left hr{
+  .hr{
     border: 1px solid grey;
     width: 265px;
     margin-top: 3px;
@@ -91,5 +91,14 @@
     .contact-container{
       background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
       }
+      .feedback-ttile{
+        font-weight: 500;
+        color:#4facfe;
+        font-size: 25px;
+      }
+      .hr{
+        width: 172px;
+      }
+
   }
   

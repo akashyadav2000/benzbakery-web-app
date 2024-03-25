@@ -12,8 +12,8 @@ function Feedback() {
         class="contact-left"
       >
         <div class="contact-left-title">
-          <h1>Feedback Form</h1>
-          <hr />
+          <h1 className='feedback-ttile'>Feedback Form</h1>
+          <hr className='hr' />
         </div>
         <input
           type="hidden"
