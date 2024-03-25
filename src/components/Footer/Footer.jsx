@@ -29,7 +29,7 @@ function Footer() {
             <p>T.P Road</p>
             <p>Tembipada,Bhandup (West)</p>
             <p>Maharashtra, PIN 400078, India</p>
-            <p className="email-id">Benzbakeryofficial@gmail.com</p>
+            <p className="email-id">Akashvinodyadav11@gmail.com</p>
             <h3> Mon - Sun &nbsp; &nbsp;   10Am &nbsp;10Pm</h3>
           </div>
 

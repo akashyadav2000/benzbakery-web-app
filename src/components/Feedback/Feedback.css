@@ -1,15 +1,4 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-transform: capitalize;
-  font-family: 'Poppins', sans-serif;
-  }
 
-  hr{
-    border: 1px solid grey;
-    width: 238px;
-  }
   .contact-container{
   background-image: linear-gradient(100deg, #ffffff 20%, #b1c3e2 100%);
   padding-top: 75px;
@@ -24,20 +13,17 @@
   align-items: flex-start;
   gap: 20px;
   }
-  .contact-left-tittle h2{
+  h1{
     font-weight: 600;
-    color:#a363aa;
-    font-size: 40px;
-    margin-bottom: 5px;
+    color:#4facfe;
+    font-size: 38px;
   }
-  .contact-left-tittle hr{
-    border: none;
-    width: 120px;
-    height: 5px;
-    background-color: #a363aa;
-    border-radius: 10px;
-    margin-bottom: 20px;
+  .contact-left hr{
+    border: 1px solid grey;
+    width: 265px;
+    margin-top: 3px;
   }
+
   .contact-inputs{
     width: 400px;
     height: 50px;
