@@ -87,8 +87,8 @@
 
   .home h1 {
     text-align: center;
-    font-size: 3rem;
-    padding-top: 37vh;
+    font-size: 2.5rem;
+    padding-top: 36vh;
   }
 
   .home p {
@@ -99,7 +99,7 @@
 
 @media (max-width: 600px) {
   .home {
-    min-height: 92vh;
+    min-height: 92.5vh;
     background-image: url("../Images/background-mobile.jpg");
   }
 
