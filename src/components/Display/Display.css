@@ -32,7 +32,7 @@
 .home-btn .slogan {
   padding: 0.85rem 2.3rem;
   border: 2px solid rgb(255, 154, 169);
-  border-radius: 10px;
+  border-radius: 6px;
   font-size: 1.2rem;
   text-shadow: 2px 2px 2px #000000;
   font-weight: 600;
@@ -100,11 +100,12 @@
 @media (max-width: 600px) {
   .home {
     min-height: 93vh;
-    background-image: url("../Images/background-mobile.jpg");
+    background-image: url("./Images/mobile-background1.jpg");
+    background-position: left;
   }
 
   .home-btn .slogan {
-    padding: 0.6rem 1.2rem;
+    padding: 0.7rem 1.2rem;
     border: 1px solid rgb(255, 154, 169);
   }
 }
