@@ -100,7 +100,7 @@
 @media (max-width: 600px) {
   .home {
     min-height: 93vh;
-    background-image: url("./Images/mobile-background1.jpg");
+    background-image: url("../Images/mobile-background1.jpg");
     background-position: left;
   }
 
