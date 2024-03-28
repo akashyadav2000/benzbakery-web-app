@@ -121,8 +121,10 @@
 
 @media (max-width: 450px) {
   .about-photo {
-    margin-top: -1.6rem;
-    min-height: 65vh;
+    /* margin-top: -1.6rem;
+    min-height: 65vh; */
+    margin-top: -8.4rem;
+    min-height: 80vh;
     max-width: 99%;
     margin-inline: auto;
     background-image: url("../Images/About-mobile-bg.jpg");
@@ -135,7 +137,7 @@
   }
 
   .value-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 0px;
   }
   .value {
@@ -152,12 +154,12 @@
   }
   .v-cell h2 {
     padding: 4px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
   }
   .v-cell p {
     padding: 0px;
-    font-size: 1rem;
+    font-size: 13px;
     font-weight: 500;
     letter-spacing: 1px;
   }

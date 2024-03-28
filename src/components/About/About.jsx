@@ -30,12 +30,12 @@ function About() {
 
       {/* -------------------------Our Value------------------- */}
 
-      <section className="value" id="product" style={{ padding: "0px 10%" }}>
+      <section className="value" id="product" style={{ padding: "0px 5%" }}>
         <h1 className="value-title">Our Value</h1>
         <div className="v-row">
 
           <div className="v-cell">
-            <img src="./Images/Recipes.png" alt="Recipes" style={{ width: "200px" }} />
+            <img src="./Images/Recipes.png" alt="Recipes" style={{ width: "170px" }} />
             <div className="cake-star">
             </div>
             <h2>AUTHENTIC RECIPES</h2>
