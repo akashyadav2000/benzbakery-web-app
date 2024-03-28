@@ -1,4 +1,3 @@
-
 /* .about-title {
     margin-top: 6rem;
     margin-left: 46%;
@@ -7,115 +6,157 @@
     color: black;
     position: absolute;
   } */
-  
-  .about-photo {
-    margin-top: -6.6rem;
-    min-height: 76vh;
-    /* max-width: 95%; */
-    /* margin:auto; */
-    /* background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%); */
-    /* background-image: url('/benz-bakery/Images/About_background_photo.png'); */
-    background-image: url('../Images/About_background_photo.png');
-    background-position: center;
-    background-size: cover;
-    /* overflow: hidden; */
-  }
-  
-  .about_details {
-    font-family: 'Poppins', cursive;
+
+.about-photo {
+  margin-top: -6.6rem;
+  min-height: 76vh;
+  /* max-width: 95%; */
+  /* margin:auto; */
+  /* background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%); */
+  /* background-image: url('/benz-bakery/Images/About_background_photo.png'); */
+  background-image: url("../Images/About_background_photo.png");
+  background-position: center;
+  background-size: cover;
+  /* overflow: hidden; */
+}
+
+.about_details {
+  font-family: "Poppins", cursive;
   /*    margin-top: 12px; */
-    font-size: 27px;
-    font-weight:500;
-    text-align: justify;
-    padding: 4px 16.8%;
-    /* margin-left:3rem ;
+  font-size: 27px;
+  font-weight: 500;
+  text-align: justify;
+  padding: 4px 16.8%;
+  /* margin-left:3rem ;
     margin-right:4rem ;    */
-    background: linear-gradient(to bottom, white,lightcyan);
+  background: linear-gradient(to bottom, white, lightcyan);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-5px);
   }
-  
-  
-  @keyframes animate {
-    0% {
-        transform: translateX(-5px);
-    }
-  
-    100% {
-        transform: translateX(5px);
-    }
+
+  100% {
+    transform: translateX(5px);
   }
-  
-  @media(max-width:768px) {
-    .about-photo h1 {
-        font-size: 3rem;
-        padding-top: 50%;
-    }
-  
-    .about-photo details {
-        font-size: 1.2rem;
-    }
-  }
-  
-  
-  .value-title {
-    text-align: center;
+}
+
+@media (max-width: 768px) {
+  .about-photo h1 {
     font-size: 3rem;
-    color: rgb(236, 35, 119);
-    padding-top:20px;
-    margin-bottom: -12px;
+    padding-top: 50%;
   }
-  
-  
-  /* <-------------------------Our Value-------------------> */
-  .value {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    background: linear-gradient(to top, #e9defa, #fdcbf1 );
+
+  .about-photo details {
+    font-size: 1.2rem;
   }
-  
-  .v-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    /* align-items: center;
+}
+
+.value-title {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(236, 35, 119);
+  padding-top: 20px;
+  margin-bottom: -12px;
+}
+
+/* <-------------------------Our Value-------------------> */
+.value {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background: linear-gradient(to top, #e9defa, #fdcbf1);
+}
+
+.v-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  /* align-items: center;
    justify-content:center; */
-  }
-  
-  .v-cell {
-    flex: 1 1 20rem;
-    text-align: center;
-    margin-top: 2.5rem;
-    margin-right: 1.4rem;
-    margin-bottom: 1.5rem;
-    /* max-width: 1300px;
+}
+
+.v-cell {
+  flex: 1 1 20rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-right: 1.4rem;
+  margin-bottom: 1.5rem;
+  /* max-width: 1300px;
     height: 10rem; */
-    /* padding:2s.2rem; */
+  /* padding:2s.2rem; */
+}
+
+.v-cell img {
+  height: 5rem;
+  width: 20%;
+  object-fit: cover;
+}
+
+.v-cell h2 {
+  padding: 9px;
+  color: darkblue;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.v-cell p {
+  font-family: "Georama", sans-serif;
+  padding: 8px;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+@media (max-width: 768px) {
+  .title {
+    text-align: center;
+    font-size: 2rem;
   }
-  
-    .v-cell img {
-        height: 5rem;
-        width: 20%;
-        object-fit: cover;
-    }
-  
-    .v-cell h2 {
-        padding: 9px;
-        color: darkblue;
-        font-size: 1.5rem;
-        letter-spacing: .1rem;
-    }
-  
-    .v-cell p {
-        font-family: 'Georama', sans-serif;
-        padding: 8px;
-        color: black;
-        font-size: 1.3rem;
-        font-weight: 700;
-        letter-spacing: .1rem;
-    }
-  
-  @media(max-width:768px) {
-    .title {
-        text-align: center;
-        font-size: 2rem;
-    }
+}
+
+@media (max-width: 450px) {
+  .about-photo {
+    /* margin-top: -6.6rem;
+    min-height: 76vh; */
+    max-width: 99%;
+    margin-inline: auto;
+    /* background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%); */
+    background-image: url("../Images/About-mobile-bg.jpg");
+    /* background-position: center;
+    background-size: cover; */
   }
+  .about_details {
+    font-size: 1rem;
+    padding: 10px 6%;
+  }
+
+  .value-title {
+    font-size: 2rem;
+    margin-bottom: 0px;
+  }
+  .value {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .v-cell {
+    margin-top: 1.1rem;
+    margin-right: 0px;
+    margin-bottom: 1rem;
+  }
+  .v-cell img {
+    height: auto;
+  }
+  .v-cell h2 {
+    padding: 4px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+  .v-cell p {
+    padding: 0px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+}
