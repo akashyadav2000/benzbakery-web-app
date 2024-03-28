@@ -10,15 +10,20 @@ function About() {
 
       <section className="about_details" style={{ fontfamily: 'Lobster' }}>
 
-        <span>Benz bakery is befitting our exclusive and indulgent range of offerings that Cakes and
-          Pastary.<br /><br />
+        <p>Our story began with a love for baking and a desire to share that love with our community. Today, Benz bakery is a symbol of quality, integrity, and irresistible flavor.</p>
+        <p>Step into our world of flour, sugar, and everything nice. At Benz bakery, we believe in the magic of freshly baked goods and the joy they bring.</p>
+        <p>At Benz bakery, baking isn't just a job; it's our passion. Each confection is a testament to our dedication to quality and flavor.</p>
+
+
+        {/* 
+        <span>Benz bakery is befitting our exclusive and indulgent range of offerings that Cakes and Pastary.<br /><br />
 
           From our humble beginnings in 2023, when the first Benz bakery store opened its doors at the
           Tembipada, bhandup west (Mumbai).<br /><br />
 
           Our mission is to spread happiness by serving smiles on a plate, and this journey continues as we open
           Benz bakery across the country.
-        </span>
+        </span> */}
 
       </section>
 
