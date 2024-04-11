@@ -25,10 +25,10 @@ function Login() {
     const password = document.getElementById('txtpass').value;
 
     const updatedErrorMessages = {
-      email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? '' : 'Invalid email address.',
+      email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? '' : 'Invalid email address',
       password: /^(?=.*[A-Za-z0-9])(?=.*[@#$%^&+=])[A-Za-z0-9@#$%^&+=]{8,}$/.test(password)
         ? ''
-        : 'Password should be 8 characters long with at least 1 special character and 1 number.',
+        : 'Password should be 8 characters long with at least 1 special character and 1 number',
     };
 
     setErrorMessages(updatedErrorMessages);
@@ -48,18 +48,21 @@ function Login() {
     event.preventDefault();
   }
 
+
   return (
     <>
-      <form onClick={handleSubmit} className='login-form'>
+
+      <form onClick={handleSubmit}>
         <div className="account-container">
+
           <div className="login-image-container">
             <img src="./Images/Login_Background.jpg" alt="Login_Background" />
           </div>
-          <div className="login-container" id="">
 
-            <div className="login-title">Login</div>
+          <div className="login-container" id="login-page">
 
             <div className="user-details">
+              <div className="login-title">Login</div>
 
               <span className="login_details">Email id</span>
               <input type="email" id="txtemail" placeholder="Enter your email" required=""
@@ -68,7 +71,6 @@ function Login() {
 
 
               <span className="login_details">Password</span>
-
               <input type={eye ? 'password' : 'text'} id="txtpass" placeholder="Password" required=""
                 style={{ textTransform: "none" }} className="login-text-box" />
 
@@ -76,19 +78,15 @@ function Login() {
               <p className="error-login-messages">{errorMessages.password}</p>
 
 
-              {/* {password ? (<Eye className="password-eye" onClick={handlePasswordEye} />) : (<EyeOff className="password-eye" onClick={handlePasswordEye} />)} */}
+              <button id="login_btn" className="login-btn" onClick={handleLogin}>Login</button>
 
 
-              <button id="" className="login-btn" onClick={handleLogin}>Login</button>
-              <div>
-                <Link to={"/benzbakery-web-app/Signup"} className="sign-up-line">Don't have an account ?
-                  <span className="sign-up-link">Sign up</span></Link>
-              </div>
+              <Link to={"/benzbakery-web-app/Signup"} className="sign-up-line">Don't have an account ?
+                <span className="sign-up-link">Sign up</span></Link>
+
               <Link to="" className="forgot-pwd">Forgot Password? </Link>
 
             </div>
-
-
           </div>
         </div>
       </form>

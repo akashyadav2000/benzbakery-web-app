@@ -35,14 +35,14 @@ function Signup() {
     const confirmPassword = document.getElementById('txtcpass').value;
 
     const updatedErrorMessages = {
-      username: /^[A-Za-z]+$/.test(username) ? '' : 'Name should only contain alphabets.',
-      email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? '' : 'Invalid email address.',
-      mobileNumber: /^\d{10,}$/.test(mobileNumber) ? '' : 'Mobile number should contain at least 10 digits.',
-      address: address.replace(/\s/g, '').length >= 10 ? '' : 'Address should contain at least 10 characters.',
+      username: /^[A-Za-z]+$/.test(username) ? '' : 'Name should only contain alphabets',
+      email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? '' : 'Invalid email address',
+      mobileNumber: /^\d{10,}$/.test(mobileNumber) ? '' : 'Mobile number should contain at least 10 digits',
+      address: address.replace(/\s/g, '').length >= 10 ? '' : 'Address should contain at least 10 characters',
       password: /^(?=.*[A-Za-z0-9])(?=.*[@#$%^&+=])[A-Za-z0-9@#$%^&+=]{8,}$/.test(password)
         ? ''
-        : 'Password should be 8 characters long with at least 1 special character and 1 number.',
-      confirmPassword: password === confirmPassword ? '' : 'Passwords do not match.',
+        : 'Password should be 8 characters long with at least 1 special character and 1 number',
+      confirmPassword: password === confirmPassword ? '' : 'Passwords do not match',
     };
 
     setErrorMessages(updatedErrorMessages);
@@ -60,6 +60,8 @@ function Signup() {
   const handleSubmit = (event) => {
     event.preventDefault();
   };
+
+
   return (
     <>
       <form onClick={handleSubmit}>
@@ -115,7 +117,7 @@ function Signup() {
 
               <button id="signup_btn" className="sign-up-btn" onClick={handleSignup}>Signup</button>
 
-              <Link to={"/benzbakery-web-app/Login"} className="login-line">Have an account already? <span className="login-link">log in</span></Link>
+              <Link to={"/benzbakery-web-app/Login"} className="login-line">Have an account already ?<span className="login-link">log in</span></Link>
 
 
             </div>
