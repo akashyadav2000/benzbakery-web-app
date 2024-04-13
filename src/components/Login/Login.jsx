@@ -44,7 +44,7 @@ function Login() {
     }
   };
 
-  const handleSubmit = (event) => {
+  const login_handleSubmit = (event) => {
     event.preventDefault();
   }
 
@@ -52,7 +52,7 @@ function Login() {
   return (
     <>
 
-      <form onClick={handleSubmit}>
+      <form onClick={login_handleSubmit}>
         <div className="login-container">
 
           <div className="login-image-container">

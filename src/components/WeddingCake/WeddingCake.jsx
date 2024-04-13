@@ -14,7 +14,7 @@ function WeddingCake({ weddingCakeItem }) {
   return (
     <>
 
-      <div className="cake-coll" id={weddingCakeItem.id}>
+      <div className="wed-cake-col" id={weddingCakeItem.id}>
         <img src={weddingCakeItem.image} alt={weddingCakeItem.alt_Name} />
         <div className="price">
           <Link to={"/benzbakery-web-app/Cart"}

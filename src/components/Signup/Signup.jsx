@@ -57,14 +57,14 @@ function Signup() {
     }
   };
 
-  const handleSubmit = (event) => {
+  const signup_handleSubmit = (event) => {
     event.preventDefault();
   };
 
 
   return (
     <>
-      <form onClick={handleSubmit}>
+      <form onClick={signup_handleSubmit}>
         <div className="signup-container">
 
           <div className="signup-image-container">

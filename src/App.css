@@ -341,14 +341,14 @@ header .user-cart {
   background: linear-gradient(to right, #e9defa, #f5e3e6);
 }
 
-.cake-roww {
+.wed-cake-row {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.cake-coll {
+.wed-cake-col {
   /* max-width: 1300px;*/
   width: 330px;
   height: 40rem;
@@ -360,8 +360,8 @@ header .user-cart {
   transition: all 0.5s ease-in-out;
 }
 
-.cake-coll img {
-  margin-bottom: -0.2rem;
+.wed-cake-col img {
+  margin-bottom: -4px;
   height: 36rem;
   width: 100%;
   object-fit: cover;
@@ -369,7 +369,7 @@ header .user-cart {
   border-top-left-radius: 0.8rem;
 }
 
-.cake-coll:hover {
+.wed-cake-col:hover {
   /* transition:.5s ease; */
   transform: scale(1.12);
   box-shadow: 0 0.45rem 7rem #b8e2a3;
@@ -507,20 +507,22 @@ header .user-cart {
 
   .cake-col img {
     height: 9rem;
+    margin-bottom: -3px;
   }
 
   .rupees {
     font-size: 0.8rem;
   }
 
-  .cake-coll {
+  .wed-cake-col {
     height: 20rem;
     width: 140px;
     margin: 2.5rem 1rem 1rem;
   }
 
-  .cake-coll img {
+  .wed-cake-col img {
     height: 17rem;
+    margin-bottom: -3px;
   }
 }
 
@@ -539,12 +541,13 @@ header .user-cart {
     padding-top: 0;
   }
 
-  .cake-coll {
+  .wed-cake-col {
     height: 16.4rem;
     margin: 2.5rem 1rem 0.1rem;
   }
 
-  .cake-coll img {
+  .wed-cake-col img {
     height: 14rem;
+    margin-bottom: -3px;
   }
 }

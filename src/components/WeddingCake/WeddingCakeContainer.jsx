@@ -11,7 +11,7 @@ function WeddingCakeContainer() {
         <span className="white"></span>
         <section className="product-4-wedding-cakes" id="product-3-wedding-cakes">
           <h1 className="title">Our Most Popular <span>Wedding Cakes</span></h1>
-          <div className="cake-roww" id="main_wedding_cakes">
+          <div className="wed-cake-row" id="main_wedding_cakes">
 
             {items.map(weddingCakeElement => <WeddingCake key={weddingCakeElement.id} weddingCakeItem={weddingCakeElement} />)}
 
