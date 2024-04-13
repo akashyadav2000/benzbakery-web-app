@@ -21,8 +21,8 @@ function Login() {
 
 
   const validateInputs = () => {
-    const email = document.getElementById('txtemail').value;
-    const password = document.getElementById('txtpass').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('pass').value;
 
     const updatedErrorMessages = {
       email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? '' : 'Invalid email address',
@@ -53,36 +53,36 @@ function Login() {
     <>
 
       <form onClick={handleSubmit}>
-        <div className="account-container">
+        <div className="login-container">
 
           <div className="login-image-container">
             <img src="./Images/Login_Background.jpg" alt="Login_Background" />
           </div>
 
-          <div className="login-container" id="login-page">
+          <div className="login-form-container" id="login-page">
 
-            <div className="user-details">
-              <div className="login-title">Login</div>
+            <div className="login-user-details">
+              <div className="login-title">LOGIN</div>
 
-              <span className="login_details">Email id</span>
-              <input type="email" id="txtemail" placeholder="Enter your email" required=""
+              <span className="login-details">Email id</span>
+              <input type="email" id="email" placeholder="Enter your email" required=""
                 style={{ textTransform: "none" }} className="login-text-box" />
               <p className="error-login-messages">{errorMessages.email}</p>
 
 
-              <span className="login_details">Password</span>
-              <input type={eye ? 'password' : 'text'} id="txtpass" placeholder="Password" required=""
-                style={{ textTransform: "none" }} className="login-text-box" />
+              <span className="login-details">Password</span>
+              <input type={eye ? 'password' : 'text'} id="pass" placeholder="Password" required=""
+                style={{ textTransform: "none" }} className="login-pass-box login-text-box" />
 
               {eye ? <FontAwesomeIcon className='login-password-eye' icon={faEye} onClick={handlePasswordEye} /> : <FontAwesomeIcon className='login-password-eye' icon={faEyeSlash} onClick={handlePasswordEye} />}
               <p className="error-login-messages">{errorMessages.password}</p>
 
 
-              <button id="login_btn" className="login-btn" onClick={handleLogin}>Login</button>
+              <button id="login_btn" className="login-btn" onClick={handleLogin}>Log In</button>
 
 
-              <Link to={"/benzbakery-web-app/Signup"} className="sign-up-line">Don't have an account ?
-                <span className="sign-up-link">Sign up</span></Link>
+              <Link to={"/benzbakery-web-app/Signup"} className="signup-line">Don't have an account ?
+                <span className="signup-link">Sign up</span></Link>
 
               <Link to="" className="forgot-pwd">Forgot Password? </Link>
 

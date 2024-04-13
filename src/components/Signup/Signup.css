@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-.container {
+.signup-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
   border-bottom-left-radius: 5px;
 }
 
-.register-container {
+.signup-form-container {
   /* position:relative; */
   display: grid;
   justify-content: center;
@@ -47,6 +47,7 @@
 .signup-title {
   font-family: "Poppins", sans-serif;
   /* margin-top: 0px; */
+  text-align: center;
   font-size: 25px;
   font-weight: 500;
   position: relative;
@@ -56,21 +57,21 @@
 .signup-title::before {
   content: "";
   position: absolute;
-  left: 0;
+  /* left: 0; */
   bottom: 0;
   height: 3px;
-  width: 160px;
+  width: 177px;
   border-radius: 5px;
   background: linear-gradient(to right, #ff1db4, #ac1dff);
 }
 
-/* .user-details {
+/* .signup-user-details {
   margin: 20px 0 12px 0;
   margin: 0px 0 12px 0;
   margin-bottom: 12px;
 } */
 
-.details {
+.signup-details {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   margin-bottom: 3px;
@@ -121,7 +122,7 @@ input[type="text"]::-webkit-outer-spin-button {
   font-size: 21px;
 }
 
-.error-messages {
+.signup-error-messages {
   margin-top: -7px;
   margin-bottom: 7px;
   margin-left: 5px;
@@ -129,7 +130,7 @@ input[type="text"]::-webkit-outer-spin-button {
   color: rgb(255, 0, 0);
 }
 
-.sign-up-btn {
+.signup-btn {
   font-family: "Poppins", sans-serif;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -138,17 +139,19 @@ input[type="text"]::-webkit-outer-spin-button {
   border-radius: 5px;
   border: none;
   color: white;
-  font-size: 18px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: linear-gradient(to left, #f977ce, #c373f2);
+  background: linear-gradient(to left, #c373f2, #f977ce);
 }
 
-.sign-up-btn:hover {
+.signup-btn:hover {
   transform: scale(105%);
-  background: linear-gradient(to right, #ff1db4, #ac1dff);
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  background: linear-gradient(to left, #ff1db4, #ac1dff);
   color: #000000;
 }
 
@@ -195,7 +198,7 @@ input[type="text"]::-webkit-outer-spin-button {
     display: none;
   }
 
-  .register-container {
+  .signup-form-container {
     /* min-height: 100%; */
     height: 83vh;
     width: 380px;
@@ -203,7 +206,7 @@ input[type="text"]::-webkit-outer-spin-button {
     box-shadow: 1px 1px 15px #7fdbff;
   }
 
-  /* .error-messages {
+  /* .signup-error-messages {
     color: rgb(0, 0, 0);
     text-shadow: 0px 1px 1px rgb(255, 5, 5);
   } */
@@ -217,18 +220,28 @@ input[type="text"]::-webkit-outer-spin-button {
   }
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 460px) {
+  .signup-title::before {
+    width: 141px;
+  }
+
   .signup-text-box {
     width: 290px;
   }
-  .sign-up-btn:hover {
-    transform: scale(101%);
+
+  .signup-btn:hover {
+    transform: scale(103%);
   }
-  .container {
+
+  .signup-text-box:focus-visible {
+    transform: scale(103%);
+  }
+
+  .signup-container {
     padding-top: 35px;
   }
 
-  .register-container {
+  .signup-form-container {
     width: 330px;
     height: 635px;
     padding: 5px 20px;
@@ -238,7 +251,7 @@ input[type="text"]::-webkit-outer-spin-button {
     font-size: 20px;
   }
 
-  .details {
+  .signup-details {
     font-size: 14px;
   }
 
@@ -247,11 +260,11 @@ input[type="text"]::-webkit-outer-spin-button {
     font-size: 14px;
   }
 
-  .error-messages {
+  .signup-error-messages {
     font-size: 13px;
   }
 
-  .sign-up-btn {
+  .signup-btn {
     height: 42px;
   }
 
@@ -264,15 +277,8 @@ input[type="text"]::-webkit-outer-spin-button {
   }
 
   .signup-password-eye {
-    margin-left: 248px;
+    margin-left: 258px;
     margin-top: -34px;
     font-size: 18px;
-  }
-  .signup-text-box:focus-visible {
-    transform: scale(105%);
-  }
-
-  .sign-up-btn:hover {
-    transform: scale(105%);
   }
 }

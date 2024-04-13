@@ -27,12 +27,12 @@ function Signup() {
   };
 
   const validateInputs = () => {
-    const username = document.getElementById('txtuname').value;
-    const email = document.getElementById('txtemail').value;
-    const mobileNumber = document.getElementById('txtmobile').value;
-    const address = document.getElementById('txtaddress').value;
-    const password = document.getElementById('txtpass').value;
-    const confirmPassword = document.getElementById('txtcpass').value;
+    const username = document.getElementById('uname').value;
+    const email = document.getElementById('email').value;
+    const mobileNumber = document.getElementById('mobile').value;
+    const address = document.getElementById('address').value;
+    const password = document.getElementById('pass').value;
+    const confirmPassword = document.getElementById('cpass').value;
 
     const updatedErrorMessages = {
       username: /^[A-Za-z]+$/.test(username) ? '' : 'Name should only contain alphabets',
@@ -65,57 +65,57 @@ function Signup() {
   return (
     <>
       <form onClick={handleSubmit}>
-        <div className="container">
+        <div className="signup-container">
 
           <div className="signup-image-container">
             <img src="./Images/Login_Background.jpg" alt="Signup_Background" />
           </div>
 
-          <div className="register-container" id="registration-page">
+          <div className="signup-form-container" id="signup_form_container">
+            {/* id="registration-page" */}
+
+            <div className="signup-user-details">
+              <div className="signup-title">REGISTRATION</div><br />
+              <span className="signup-details">User Name</span>
+              <input type="text" id="uname" placeholder="Enter your name" required="" style={{ textTransform: "none" }} className="signup-text-box" />
+              <p className="signup-error-messages">
+                {errorMessages.username}</p>
 
 
+              <span className="signup-details">Email</span>
+              <input type="email" id="email" placeholder="Enter your email" required="" style={{ textTransform: "none" }} className="signup-text-box" />
+              <p className="signup-error-messages" >{errorMessages.email}</p>
 
-            <div className="user-details">
-              <div className="signup-title">Registration</div><br />
-              <span className="details">User Name</span>
-              <input type="text" id="txtuname" placeholder="Enter your name" required="" style={{ textTransform: "none" }} className="signup-text-box" />
-              <p className="error-messages" >{errorMessages.username}</p>
+              <span className="signup-details">Mobile Number</span>
+              <input type="number" id="mobile" placeholder="Enter your number" required="" className="signup-text-box" />
+              <p className="signup-error-messages" >{errorMessages.mobileNumber}</p>
 
-
-              <span className="details">Email</span>
-              <input type="email" id="txtemail" placeholder="Enter your email" required="" style={{ textTransform: "none" }} className="signup-text-box" />
-              <p className="error-messages" >{errorMessages.email}</p>
-
-              <span className="details">Mobile Number</span>
-              <input type="number" id="txtmobile" placeholder="Enter your number" required="" className="signup-text-box" />
-              <p className="error-messages" >{errorMessages.mobileNumber}</p>
-
-              <span className="details">Address</span>
-              <input type="text" id="txtaddress" placeholder="Enter your address" required="" className="signup-text-box" />
-              <p className="error-messages" >{errorMessages.address}</p>
+              <span className="signup-details">Address</span>
+              <input type="text" id="address" placeholder="Enter your address" required="" className="signup-text-box" />
+              <p className="signup-error-messages" >{errorMessages.address}</p>
 
 
-              <span className="details">Password</span>
+              <span className="signup-details">Password</span>
 
 
-              <input type={eye ? 'password' : 'text'} id="txtpass" placeholder="Password" required=""
+              <input type={eye ? 'password' : 'text'} id="pass" placeholder="Password" required=""
                 style={{ textTransform: "none" }} className="signup-text-box" />
 
 
               {eye ? <FontAwesomeIcon className='signup-password-eye' icon={faEye} onClick={handlePasswordEye} /> : <FontAwesomeIcon className='signup-password-eye' icon={faEyeSlash} onClick={handlePasswordEye} />}
-              <p className="error-messages" >{errorMessages.password}</p>
+              <p className="signup-error-messages" >{errorMessages.password}</p>
 
-              <span className="details">Confirm Password</span>
+              <span className="signup-details">Confirm Password</span>
 
 
-              <input type={ceye ? 'password' : 'text'} id="txtcpass" placeholder="Confirm Password" required=""
+              <input type={ceye ? 'password' : 'text'} id="cpass" placeholder="Confirm Password" required=""
                 style={{ textTransform: "none" }} className="signup-text-box" />
 
 
               {ceye ? <FontAwesomeIcon className='signup-password-eye' icon={faEye} onClick={handlePasswordCeye} /> : <FontAwesomeIcon className='signup-password-eye' icon={faEyeSlash} onClick={handlePasswordCeye} />}
-              <p className="error-messages" >{errorMessages.confirmPassword}</p>
+              <p className="signup-error-messages" >{errorMessages.confirmPassword}</p>
 
-              <button id="signup_btn" className="sign-up-btn" onClick={handleSignup}>Signup</button>
+              <button id="signup_btn" className="signup-btn" onClick={handleSignup}>Sign Up</button>
 
               <Link to={"/benzbakery-web-app/Login"} className="login-line">Have an account already ?<span className="login-link">log in</span></Link>
 

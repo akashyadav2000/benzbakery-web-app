@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-.account-container {
+.login-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@
   border-bottom-left-radius: 5px;
 }
 
-.login-container {
+.login-form-container {
   display: flex;
   align-items: center;
   width: 400px;
@@ -47,6 +47,7 @@
   margin-bottom: 20px;
   font-size: 25px;
   font-weight: 500;
+  text-align: center;
   position: relative;
   cursor: default;
 }
@@ -54,7 +55,7 @@
 .login-title::before {
   content: "";
   position: absolute;
-  left: 0;
+  /* left: 0; */
   bottom: 0;
   height: 3px;
   width: 80px;
@@ -62,11 +63,11 @@
   background: linear-gradient(to right, #ff1db4, #ac1dff);
 }
 
-/* .user-details {
+/* .login-user-details {
   margin: 0px 0 12px 0;
 } */
 
-.login_details {
+.login-details {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 19px;
@@ -81,7 +82,7 @@
   outline: none;
   font-size: 18px;
   border-radius: 5px;
-  padding-left: 15px;
+  padding-inline: 12px;
   border: 1px solid #ccc;
   border-bottom-width: 2px;
   margin-bottom: 21px;
@@ -94,12 +95,15 @@
   transform: scale(105%);
   border-color: #9b59b6;
 }
+.login-pass-box {
+  padding-right: 12.7%;
+}
 
 .login-password-eye {
   position: absolute;
   display: flex;
   margin-top: -54px;
-  margin-left: 310px;
+  margin-left: 304px;
   cursor: pointer;
   font-size: 21px;
 }
@@ -121,7 +125,8 @@
   border-radius: 5px;
   border: none;
   color: white;
-  font-size: 18px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 1px;
   cursor: pointer;
@@ -131,11 +136,12 @@
 
 .login-btn:hover {
   transform: scale(105%);
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
   background: linear-gradient(to right, #ff1db4, #ac1dff);
   color: #000000;
 }
 
-.sign-up-line {
+.signup-line {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   display: flex;
@@ -147,7 +153,7 @@
   font-weight: 500;
 }
 
-.sign-up-link {
+.signup-link {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   text-align: justify;
@@ -158,7 +164,7 @@
   font-size: 20px;
 }
 
-.sign-up-link:hover {
+.signup-link:hover {
   color: #0024ff;
   text-shadow: 2px 2px 3px white;
   transition: all 0.1s ease;
@@ -197,7 +203,7 @@
     display: none;
   }
 
-  .login-container {
+  .login-form-container {
     /* min-height: 100%; */
     width: 390px;
     padding: 25px 27px;
@@ -213,14 +219,17 @@
   .login-text-box {
     width: 332px;
   }
+  .login-pass-box {
+    padding-right: 13.5%;
+  }
 
   .login-password-eye {
-    margin-left: 290px;
+    margin-left: 296px;
   }
 }
 
-@media only screen and (max-width: 430px) {
-  .login-container {
+@media only screen and (max-width: 460px) {
+  .login-form-container {
     display: flex;
     justify-content: center;
     width: 340px;
@@ -228,23 +237,38 @@
     padding-top: 20px;
   }
 
-  .account-container {
+  .login-container {
     padding-top: 5px;
+  }
+
+  .login-title {
+    font-size: 23px;
   }
 
   .login-text-box {
     width: 300px;
+    font-size: 16px;
+    height: 42px;
   }
 
-  /* .login-title {
-    margin-top: 20px;
-  } */
+  .login-text-box:focus-visible {
+    transform: scale(103%);
+  }
+
+  .login-details {
+    font-size: 18px;
+  }
 
   .login-btn:hover {
-    transform: scale(104%);
+    transform: scale(103%);
+  }
+
+  .login-pass-box {
+    padding-right: 13.6%;
   }
 
   .login-password-eye {
     margin-left: 265px;
+    font-size: 20px;
   }
 }
