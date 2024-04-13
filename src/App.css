@@ -441,7 +441,7 @@ header .user-cart {
 }
 
 .cake-col img {
-  margin-bottom: -0.2rem;
+  margin-bottom: -5px;
   height: 19rem;
   width: 100%;
   object-fit: cover;
