@@ -99,7 +99,7 @@ function Signup() {
 
 
               <input type={eye ? 'password' : 'text'} id="pass" placeholder="Password" required=""
-                style={{ textTransform: "none" }} className="signup-text-box" />
+                style={{ textTransform: "none" }} className="signup-pass-box signup-text-box" />
 
 
               {eye ? <FontAwesomeIcon className='signup-password-eye' icon={faEye} onClick={handlePasswordEye} /> : <FontAwesomeIcon className='signup-password-eye' icon={faEyeSlash} onClick={handlePasswordEye} />}
@@ -109,7 +109,7 @@ function Signup() {
 
 
               <input type={ceye ? 'password' : 'text'} id="cpass" placeholder="Confirm Password" required=""
-                style={{ textTransform: "none" }} className="signup-text-box" />
+                style={{ textTransform: "none" }} className="signup-pass-box signup-text-box" />
 
 
               {ceye ? <FontAwesomeIcon className='signup-password-eye' icon={faEye} onClick={handlePasswordCeye} /> : <FontAwesomeIcon className='signup-password-eye' icon={faEyeSlash} onClick={handlePasswordCeye} />}

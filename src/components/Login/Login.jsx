@@ -67,7 +67,7 @@ function Login() {
               <span className="login-details">Email id</span>
               <input type="email" id="email" placeholder="Enter your email" required=""
                 style={{ textTransform: "none" }} className="login-text-box" />
-              <p className="error-login-messages">{errorMessages.email}</p>
+              <p className="login-error-messages">{errorMessages.email}</p>
 
 
               <span className="login-details">Password</span>
@@ -75,7 +75,7 @@ function Login() {
                 style={{ textTransform: "none" }} className="login-pass-box login-text-box" />
 
               {eye ? <FontAwesomeIcon className='login-password-eye' icon={faEye} onClick={handlePasswordEye} /> : <FontAwesomeIcon className='login-password-eye' icon={faEyeSlash} onClick={handlePasswordEye} />}
-              <p className="error-login-messages">{errorMessages.password}</p>
+              <p className="login-error-messages">{errorMessages.password}</p>
 
 
               <button id="login_btn" className="login-btn" onClick={handleLogin}>Log In</button>

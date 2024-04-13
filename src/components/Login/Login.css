@@ -58,7 +58,7 @@
   /* left: 0; */
   bottom: 0;
   height: 3px;
-  width: 80px;
+  width: 75px;
   border-radius: 5px;
   background: linear-gradient(to right, #ff1db4, #ac1dff);
 }
@@ -82,7 +82,7 @@
   outline: none;
   font-size: 18px;
   border-radius: 5px;
-  padding-inline: 12px;
+  padding-inline: 13px;
   border: 1px solid #ccc;
   border-bottom-width: 2px;
   margin-bottom: 21px;
@@ -108,7 +108,7 @@
   font-size: 21px;
 }
 
-.error-login-messages {
+.login-error-messages {
   margin-top: -17px;
   margin-bottom: 7px;
   margin-left: 5px;
@@ -211,7 +211,7 @@
     box-shadow: 1px 1px 15px #7fdbff;
   }
 
-  /* .error-login-messages {
+  /* .login-error-messages {
     color: rgb(0, 0, 0);
     text-shadow: 0px 1px 1px rgb(255, 5, 5);
   } */
@@ -245,6 +245,10 @@
     font-size: 23px;
   }
 
+  .login-title:before {
+    width: 69.3px;
+  }
+
   .login-text-box {
     width: 300px;
     font-size: 16px;
@@ -269,6 +273,7 @@
 
   .login-password-eye {
     margin-left: 265px;
+    margin-top: -52px;
     font-size: 20px;
   }
 }
