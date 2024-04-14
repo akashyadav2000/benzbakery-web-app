@@ -535,12 +535,12 @@ header .user-cart {
 
   .cake-col img {
     height: 9rem;
-    margin-bottom: -4px;
+    margin-bottom: -7.9px;
   }
 
   .price {
     padding-bottom: 0;
-    padding-top: 0;
+    /* padding-top: 0; */
   }
 
   .wed-cake-col {
