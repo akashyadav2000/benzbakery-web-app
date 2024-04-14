@@ -22,10 +22,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 320px;
+  width: 340px;
   height: 635px;
-  border: 2px solid #92e0ff;
-  box-shadow: 1px 1px 10px #7fdbff;
+  /* border: 2px solid #92e0ff;
+  box-shadow: 1px 1px 5px #7fdbff; */
   background: linear-gradient(to left, #fda7df, #d4f3ff);
   padding: 5px 20px;
   border-top-right-radius: 5px;
