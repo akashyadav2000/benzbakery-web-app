@@ -206,8 +206,8 @@ input[type="text"]::-webkit-outer-spin-button {
     /* min-height: 100%; */
     height: 83vh;
     width: 380px;
-    border: 2px solid #92e0ff;
-    /* box-shadow: 1px 1px 15px #7fdbff; */
+    /* border: 2px solid #92e0ff;
+    box-shadow: 1px 1px 15px #7fdbff; */
   }
 
   /* .signup-error-messages {
